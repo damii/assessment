@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Apple Keynote",
+    "host": "Jane Doe",
+    "location": "Coolray Field",
+    "length": "30 min",
+    "size": "500",
+    "cost": "90",
+    "date": "2020-04-20",
+    "image": "images/event-1.png"
+  },
+  {
+    "name": "Facebook Devoloper Conference",
+    "host": "Ryan Bruzan",
+    "location": "Peachtree Tower",
+    "length": "8 hrs",
+    "size": "3000",
+    "cost": "900",
+    "date": "2020-08-21",
+    "image": "images/event-2.png"
+  },
+  {
+    "name": "Apple Keynote",
+    "host": "Jane Doe",
+    "location": "Peachtree Tower",
+    "length": "30 min",
+    "size": "500",
+    "cost": "100",
+    "date": "2020-04-20",
+    "image": "images/event-1.png"
+  },
+  {
+    "name": "Node, NPM, and You",
+    "host": "Jerry Head",
+    "location": "SunTrust Plaza",
+    "length": "1 hr",
+    "size": "50",
+    "cost": "10",
+    "date": "2020-04-24",
+    "image": "images/event-2.png"
+  },
+  {
+    "name": "Node, NPM, and You",
+    "host": "Jerry Head",
+    "location": "Coolray Fields",
+    "length": "1 hr",
+    "size": "50",
+    "cost": "10",
+    "date": "2020-04-24",
+    "image": "images/event-2.png"
+  },
+  {
+    "name": "Facebook Devoloper Conference",
+    "host": "Ryan Bruzan",
+    "location": "SunTrust Plaza",
+    "length": "8 hrs",
+    "size": "3000",
+    "cost": "900",
+    "date": "2020-08-21",
+    "image": "images/event-2.png"
+  },
+  {
+    "name": "Lorem ipsum dolor",
+    "host": "Donec ornare",
+    "location": "Vestibulum",
+    "length": "2 hr",
+    "size": "520",
+    "cost": "112",
+    "date": "2023-08-24",
+    "image": "images/event-1.png"
+  },
+  {
+    "name": "Donec nec odio",
+    "host": "Lorem ipsum",
+    "location": "Maecenas",
+    "length": "4 hr",
+    "size": "200",
+    "cost": "90",
+    "date": "2023-09-24",
+    "image": "images/event-2.png"
+  }
+]

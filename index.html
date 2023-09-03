@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hiring Assessment</title>
+    <meta name="description" content="Hiring Assessment" />
+    <meta name="author" content="Hiring Assessment" />
+
+    <link rel="icon" type="image/png" href="" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta http-equiv="refresh" content="" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/base.css" />
+
+    <script
+      src="https://kit.fontawesome.com/6c8c428e76.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/loadFiles.js"></script>
+  </head>
+
+  <body>
+    <div class="topbar">
+      <div class="container">
+        <div class="flex-row space-between align-center">
+          <img src="images/logo.svg" height="46px" width="220px" />
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Get in Touch </a></li>
+          </ul>
+          <button class="mobile-menu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="container">
+        <div class="flex-row flex-wrap">
+          <div class="col2">
+            <div class="slider-text">
+              <h1>Find the right event for you</h1>
+              <p>
+                From weddings to birthdays and all in between, the world needs
+                speakers like you. And not just any speaker - really good ones.
+                If you think you've got the strongest, most confident voice in
+                the room, use it to broadcast a message that people want to
+                hear.
+              </p>
+              <p class="strong">
+                Yeah, we didn't think it could get any better either.
+              </p>
+              <div class="btn-group">
+                <button class="btn-solid">
+                  <i class="fa-solid fa-location-dot"></i>Find an Event
+                </button>
+                <button class="btn-border">
+                  <i class="fa-solid fa-phone"></i>
+                  Get in Touch
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col2">
+            <div class="slider-img">
+              <img src="images/top-graphic.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-bg content">
+      <div class="container">
+        <h1>Events for every occasion</h1>
+        <div class="flex-row flex-wrap">
+          <div class="events">
+            <div id="cards-container" class="flex-row flex-wrap"></div>
+            <div class="flex-row align-center justify-center">
+              <button class="view-more">View More (100+)</button>
+            </div>
+          </div>
+          <div class="filter">
+            <div class="date-switch-btns input-style">
+              <button
+                id="date-switch-future-btn"
+                class="date-btn active"
+                name="future-btn"
+                onclick="dateSwitchFutureFunction()"
+              >
+                In the Future
+              </button>
+              <button
+                id="date-switch-past-btn"
+                class="date-btn"
+                name="past-btn"
+                onclick="dateSwitchPastFunction()"
+              >
+                In the Past
+              </button>
+              <script>
+                var futureBtn = document.getElementById(
+                  "date-switch-future-btn"
+                );
+                var pastBtn = document.getElementById("date-switch-past-btn");
+                function dateSwitchFutureFunction() {
+                  if (!futureBtn.classList.contains("active")) {
+                    futureBtn.classList.add("active");
+                    pastBtn.classList.remove("active");
+                  }
+                }
+                function dateSwitchPastFunction() {
+                  if (!pastBtn.classList.contains("active")) {
+                    pastBtn.classList.add("active");
+                    futureBtn.classList.remove("active");
+                  }
+                }
+              </script>
+            </div>
+            <div class="search input-style">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                id="search"
+                type="search"
+                placeholder="Search by name or location..."
+              />
+            </div>
+            <div class="filter-form-field flex-row space-between">
+              <label for="location">Event Location</label>
+              <div class="custom-select">
+                <i class="fa-solid fa-angle-down"></i>
+                <select name="location" id="location">
+                  <option value="Coolray Field">Coolray Field</option>
+                  <option value="Peachtree Tower">Peachtree Tower</option>
+                  <option value="SunTrust Plaza">SunTrust Plaza</option>
+                  <option value="Vestibulum">Vestibulum</option>
+                  <option value="Maecenas">Maecenas</option>
+                </select>
+              </div>
+            </div>
+            <div class="filter-form-field flex-row space-between">
+              <label>Event Length</label>
+              <div class="flex-row">
+                <div class="custom-select">
+                  <i class="fa-solid fa-angle-down"></i>
+                  <select name="event-length-min" id="event-length-min">
+                    <option value="30 min">30 min</option>
+                    <option value="1 hr">1 hr</option>
+                    <option value="2 hrs">2 hrs</option>
+                    <option value="8 hrs">8 hrs</option>
+                    <option value="1 day">1 day</option>
+                  </select>
+                </div>
+                <p class="margin-vertical">to</p>
+                <div class="custom-select">
+                  <i class="fa-solid fa-angle-down"></i>
+                  <select name="event-length-max" id="event-length-max">
+                    <option value="30 min">30 min</option>
+                    <option value="1 hr">1 hr</option>
+                    <option value="2 hrs">2 hrs</option>
+                    <option value="8 hrs">8 hrs</option>
+                    <option value="1 day">1 day</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="filter-form-field flex-row space-between align-center">
+              <label>Seat Cost</label>
+              <div class="flex-row align-center">
+                <input
+                  class="seat-cost-input"
+                  type="number"
+                  min="0"
+                  name="event-seat-cost-min"
+                  id="event-seat-cost-min"
+                  width="100px"
+                />
+                <p class="margin-vertical">to</p>
+                <input
+                  class="seat-cost-input"
+                  type="number"
+                  min="0"
+                  name="event-seat-cost-min"
+                  id="event-seat-cost-min"
+                  width="100px"
+                />
+              </div>
+            </div>
+            <div class="filter-form-field">
+              <label>Event Size</label>
+              <div class="event-size-sliders">
+                <input
+                  id="event-size-min-slider"
+                  type="range"
+                  value="20"
+                  step="10"
+                  min="10"
+                  max="1000"
+                />
+                <output id="event-size-min-slider-tooltip">20</output>
+                <input
+                  id="event-size-max-slider"
+                  type="range"
+                  value="500"
+                  step="10"
+                  min="10"
+                  max="1000"
+                />
+                <output id="event-size-max-slider-tooltip">500</output>
+                <script src="js/rangeSliders.js"></script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="flex-row responsive-row space-between align-center">
+          <p>Copyright © Motivational Speakers, LLC All Rights Reserved.</p>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"> <i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
