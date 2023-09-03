@@ -139,7 +139,6 @@ textarea {
 /*
  * Extends the .sr-only class to allow the element
  * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
  */
 
 .sr-only.focusable:active,

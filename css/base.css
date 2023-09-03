@@ -2,6 +2,7 @@
    Base styles
    ========================================================================== */
 :root {
+  --min-width: 315px;
   --max-width: 1200px;
   --border-radius: 4px;
   --font-family: Montserrat;
@@ -55,9 +56,10 @@ body p {
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
+  min-width: var(--min-width);
 }
 
-@media (max-width: 1260px) {
+@media (max-width: 1200px) {
   .container {
     padding-left: var(--padding4);
     padding-right: var(--padding4);
@@ -231,7 +233,8 @@ body p {
 }
 
 .footer p {
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 500;
   color: var(--text-secondary-color);
 }
 
@@ -321,7 +324,7 @@ body p {
 #event-size-max-slider-tooltip {
   position: absolute;
   background-color: var(--brand-color);
-  top: 53px;
+  top: 44px;
   color: #fff;
   padding-left: var(--padding);
   padding-right: var(--padding);
@@ -392,17 +395,17 @@ body p {
       search input styles
       ========================================================================== */
 
-.search {
+.input-cont {
   padding-left: 12px;
   padding-right: 12px;
   margin-bottom: 12px;
 }
 
-.search i {
+.input-cont i {
   color: var(--brand-color);
 }
 
-.search input {
+.input-cont input {
   border: 0;
   outline: transparent;
   flex: 1;
@@ -412,8 +415,11 @@ body p {
 
 ::placeholder,
 :-ms-input-placeholder,
+::-webkit-input-placeholder,
 ::-ms-input-placeholder {
-  color: var(--text-secondary-color);
+  color: var(--text-secondary-color) !important;
+  font-weight: 600;
+  opacity: 0.6;
 }
 
 /* ==========================================================================
@@ -450,17 +456,19 @@ body p {
 .margin-vertical {
   margin-left: var(--padding2);
   margin-right: var(--padding2);
+  color: var(--text-secondary-color);
+  font-weight: 600;
 }
 
 /* ==========================================================================
       seat cost styles
       ========================================================================== */
 .seat-cost-input {
-  width: 75px;
+  width: 50px;
   height: 46px;
   outline: transparent;
   border: 1px solid var(--border-color);
-  border-radius: 20px;
+  border-radius: 40px;
   padding-left: var(--padding);
   padding-right: var(--padding);
 }
@@ -538,6 +546,10 @@ body p {
   margin-bottom: var(--padding);
 }
 
+.card-description > p{
+  opacity: 0.6;
+}
+
 .view-more {
   border: 0;
   background: none;
@@ -545,4 +557,8 @@ body p {
   color: var(--brand-color);
   cursor: pointer;
   margin-top: var(--padding3);
+}
+
+.primary-color{
+  color: var(--brand-color);
 }

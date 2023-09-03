@@ -56,7 +56,7 @@
         <div class="flex-row flex-wrap">
           <div class="col2">
             <div class="slider-text">
-              <h1>Find the right event for you</h1>
+              <h1>Find the right event for <span class="primary-color">you</span></h1>
               <p>
                 From weddings to birthdays and all in between, the world needs
                 speakers like you. And not just any speaker - really good ones.
@@ -88,7 +88,7 @@
     </div>
     <div class="content-bg content">
       <div class="container">
-        <h1>Events for every occasion</h1>
+        <h1>Events for <span class="primary-color">every occasion</span></h1>
         <div class="flex-row flex-wrap">
           <div class="events">
             <div id="cards-container" class="flex-row flex-wrap"></div>
@@ -133,7 +133,7 @@
                 }
               </script>
             </div>
-            <div class="search input-style">
+            <div class="input-cont input-style">
               <i class="fa-solid fa-magnifying-glass"></i>
               <input
                 id="search"
@@ -183,23 +183,31 @@
             <div class="filter-form-field flex-row space-between align-center">
               <label>Seat Cost</label>
               <div class="flex-row align-center">
-                <input
-                  class="seat-cost-input"
-                  type="number"
-                  min="0"
-                  name="event-seat-cost-min"
-                  id="event-seat-cost-min"
-                  width="100px"
-                />
+                <div class="input-cont input-style">
+                  <i class="fa-solid fa-dollar-sign"></i>
+                  <input
+                    class="seat-cost-input"
+                    type="number"
+                    min="0"
+                    name="event-seat-cost-min"
+                    id="event-seat-cost-min"
+                    placeholder="Min"
+                    width="100px"
+                  />
+                </div>
                 <p class="margin-vertical">to</p>
-                <input
-                  class="seat-cost-input"
-                  type="number"
-                  min="0"
-                  name="event-seat-cost-min"
-                  id="event-seat-cost-min"
-                  width="100px"
-                />
+                <div class="input-cont input-style">
+                  <i class="fa-solid fa-dollar-sign"></i>
+                  <input
+                    class="seat-cost-input"
+                    type="number"
+                    min="0"
+                    name="event-seat-cost-min"
+                    id="event-seat-cost-min"
+                    placeholder="Max"
+                    width="100px"
+                  />
+                </div>
               </div>
             </div>
             <div class="filter-form-field">
